@@ -48,7 +48,7 @@ To-do List
 ## Getting Started
 1. Start with this Github Repository
 
-2. Git clone to directory of your choice $ git clone https://github.com/srithaja24/BankOperations.git.
+2. Git clone to directory of your choice $ git clone https://github.com/srithaja24/BankingOperations.git.
 
 3. Run the project on server
 
