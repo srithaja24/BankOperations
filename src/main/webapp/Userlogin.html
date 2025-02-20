@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>UserRegister</title>
+<link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+	
+<script type="text/javascript" src="js/validateSignUpForm.js"></script>
+<style>
+	.table1{
+				margin: 0 auto;
+                text-align:center;
+				width: 100%;
+				
+	}
+	.table1 td {
+               padding:20px;
+			   border-spacing: 12px;
+			   background-color: orange;
+               
+     }
+	 .table1 th{
+		 background-color: black;
+		 font: 14px;
+		 font-style: italic;
+		 color: aliceblue;
+		 padding: 5px;
+	 }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b>Titli Bank</b></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Home.html">Home</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="Home.html">About Us</a></li>
+            <li><a href="Home.html">Help</a></li>
+          </ul>
+        </div>
+      </nav>
+
+<table class="table1">
+<tr>
+	<th>Login</th>
+	</tr>
+	<tr>
+
+<td>	
+	<table cellpadding="10" cellspacing="10">
+	
+		<form action="AuthenticateUser" onsubmit="return validate()">
+		<tr><td>Customer Id </td><td><input  type="text" name="customerId" id="customerId" /></td></tr>
+		<tr><td>Password </td><td><input  type="password" name="password" id="password" /></td></tr>
+				
+		<tr><td><input type="submit" value="Login"> </td>
+		<td><input type="reset" value="Clear"></td></tr>
+	</form>
+	</table>
+	
+</td>
+</tr>
+<tr>
+<td>
+<h3>If you are new to this page, Please Sign up</h3><br/>
+<h3><button><a href="CustomerSignIn.html">Sign Up</a></button></h3>
+</td>
+</tr>
+</table>
+</body>
+</html>

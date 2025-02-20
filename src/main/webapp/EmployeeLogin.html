@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 2cm;
+}
+p {
+	text-align: center;
+}
+a{
+  text-decoration:none;
+
+  padding:1px;
+}
+td
+{
+	padding:18px;
+	border-spacing: 12px;
+}
+body{
+	background-color:orange;
+	border:none;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 5px;
+	padding-bottom: 20px;
+}
+</style>
+<script type="text/javascript" src="js/EmployeeLoginValidator.js"></script>
+</head>
+<body bgcolor="orange">
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b>Titli Bank</b></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Home.html">Home</a></li>
+            <li><a href="#">Employee</a></li>
+            <li><a href="Userlogin.html">Customer</a></li>
+            <li><a href="Home.html">Log out</a></li>
+          </ul>
+        </div>
+      </nav>
+
+<h1>ONLINE BANKING</h1>
+	<h2>Please Enter Your Login Details</h2>
+	<form action="EmployeeLoginServlet" onsubmit="return employeeValidate()">
+		<table align="center" cellspecing="10" cellpadding="10">
+			<tr>
+				<td>EmployeeId:</td>
+				<td><input type="number" name="employeeid" id="employeeid" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" id="password" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Login" /></td>
+				<td><input type="reset" value="Clear" /></td>
+			</tr>
+		</table>
+		<span>
+			<p>If You Are New Employee Please click here to Register:</p>
+			<p>
+				<a href="EmployeeSignUp.html">SignUp</a>
+			</p>
+		</span>
+		</form>
+</body>
+</html>

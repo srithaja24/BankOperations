@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Deposit</title>
+<link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+h2 {
+
+	text-align: center;
+	margin-top: 2cm;
+}
+p {
+	text-align: center;
+}
+
+td {
+               padding:18px;
+			   border-spacing: 12px;
+			   background-color: orange;
+               
+     }
+
+body{
+
+background-color:orange;
+}
+</style>
+<script type="text/javascript" src="js/DepositeValidator.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b>Titli Bank</b></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Transactions.html">Home</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="Userlogin">Login In</a></li>
+            <li><a href="Home.html">Log out</a></li>
+            <li><a href="Home.html">Help</a></li>
+          
+          </ul>
+        </div>
+      </nav>
+
+<h2> Enter amount to Deposit </h2>
+	<form action="DepositAmountServlet" onsubmit="return validate()">
+		<table align="center" cellspecing="10" cellpadding="10">
+		    <tr>
+				<td>Customer Id:</td>
+				<td><input type="number" name="customerId" id="customerId" /></td>
+			</tr>
+		    
+			<tr>
+				<td>Amount:</td>
+				<td><input type="number" name="amount" id="amount" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Deposit" /></td>
+				<td><input type="reset" value="Clear" /></td>
+			</tr>
+		</table>
+		</form>
+		
+</body>
+</html>

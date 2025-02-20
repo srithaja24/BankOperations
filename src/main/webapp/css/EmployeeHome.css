@@ -1,0 +1,16 @@
+h1{
+	text-align: center;
+}
+table{
+	border: none;
+	
+	margin-top: 2cm;
+}
+td {
+               padding:18px;
+			   border-spacing: 12px;
+               
+     }
+body{
+	background-color:orange;
+}

@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color:orange;
+	border: none;
+	
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 5px;
+	padding-bottom: 20px;
+}
+td
+{
+	padding:18px;
+	border-spacing: 12px;
+}
+table{
+	border:none;
+	border-collapse:separate;
+	margin-top: 1cm;
+	width: 280px;
+	height: 280px;
+}
+h1{
+	text-align: center;
+}
+h2{
+	text-align: center;
+	margin-top: 1cm;
+}

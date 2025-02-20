@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CustomerRegister</title>
+<link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+	
+<script type="text/javascript" src="js/validateSignUpForm.js"></script>
+<style>
+	.table1{
+				margin: 0 auto;
+                text-align:center;
+				width: 100%;
+	}
+	.table1 td {
+               padding:18px;
+			   border-spacing: 12px;
+			   background-color: orange;
+               
+     }
+	 .table1 th{
+		 background-color: black;
+		 font: 14px;
+		 font-style: italic;
+		 color: aliceblue;
+		 padding: 5px;
+	 }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b>Titli Bank</b></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Home.html">Home</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="Userlogin">Login In</a></li>
+            <li><a href="Home.html">About Us</a></li>
+            <li><a href="Home.html">Help</a></li>
+          
+          </ul>
+        </div>
+      </nav>
+<table class="table1">
+<tr>
+	<th>SignUp</th>
+	
+</tr>
+	<tr>
+<td>
+ 
+    <table cellpadding="10" cellspacing="10">
+      <form action="CustomerController" method="post">
+      <tr><td>Customer Name </td><td><input  type="text" name="customerName" id="customerName" /></td></tr>
+      <tr><td>Password </td><td><input  type="c" name="password" id="password" /></td></tr>
+      <tr><td>Confirm Password </td><td><input  type="password" name="confirmpassword" id="confirmpassword" /></td></tr>
+      <tr><td>Balance</td><td><input  type="number" name="balance" id="balance" value="5000" readonly="readonly" /></td></tr>
+    
+      <tr><td>Mobile Number </td><td><input  type="text" name="mobileNumber" id="mobileNumber" /></td></tr>
+    
+      <tr><td>Email </td><td><input  type="email" name="emailId" id="emailId" /></td></tr>
+      
+      <tr><td><input type="submit" value="Submit"> </td>
+      <td><input type="reset" value="Clear"></td></tr>
+    </form>
+    </table>
+  
+
+</td>
+
+
+</tr>
+</table>
+</body>
+</html>
